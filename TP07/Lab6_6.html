@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .small{
+        display: none;
+    }
+    .big{
+        display: none;
+    }
+    @media only screen and (max-width: 767px){
+        .small{
+            display: block;
+            background-color: red;
+            color: white;
+            padding: 2%;
+        }
+    }   
+    @media only screen and (min-width: 768px){
+        .big{
+            display: block;
+            background-color: blue;
+            color: white;
+            padding: 2%;
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm small 😒</span>
+            <span class="big">I'm Big 🤣 </span>
+        </div>
+    </div>
+</body>
+</html>

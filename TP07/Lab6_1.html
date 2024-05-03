@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .flex{
+    display: flex;
+    }
+    .border{
+        /* border: 0.5px solid black; */
+        min-height: 15vh;
+    }
+    .flexcol{
+        flex-direction: column;
+    }
+    .grow1{
+        flex-grow: 1;
+    }
+    .grow0{
+        flex-grow: 0;
+    }
+    .item{
+        border: 1px solid black;
+    }
+    .red{
+        background-color: red;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .green{
+        background-color: green;
+    }
+    .purple{
+        background-color: purple;
+    }
+    </style>
+</head>
+<body>
+        <div class="border flex">
+            <div style="flex: 0 0 25%;" class="border "> 
+                <div style="background-color: pink;" class="border">b</div>
+                <div>
+                    <div class="green border">a</div>
+                    <div class="purple border">a</div>
+                </div>
+            </div>
+            <div style="flex: 1;" class="flex flexcol">
+                <div style="background-color: gray;" class="grow0 border">b</div>
+                <div class="grow1 flex ">
+                    <div style="background-color: blue;" class="grow1 border">a</div>
+                    <div style="background-color: antiquewhite;" class="grow1 border">a</div>
+                    <div style="background-color: rebeccapurple;" class="grow1 border">a</div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
